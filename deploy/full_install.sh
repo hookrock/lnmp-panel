@@ -178,7 +178,7 @@ install_go() {
     fi
     
     local go_package="go${go_version}.linux-${arch}.tar.gz"
-    local download_url="https://golang.org/dl/${go_package}"
+    local download_url="https://dl.google.com/go/${go_package}"
     
     cd /tmp
     wget -q "$download_url"
