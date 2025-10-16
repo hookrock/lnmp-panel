@@ -14,7 +14,7 @@
 ### 方式一：一键安装（推荐）
 ```bash
 # 下载安装脚本
-wget https://raw.githubusercontent.com/your-repo/lnmp-panel/main/deploy/full_install.sh
+wget https://raw.githubusercontent.com/hookrock/lnmp-panel/main/deploy/full_install.sh
 chmod +x full_install.sh
 sudo ./full_install.sh
 ```
@@ -24,13 +24,13 @@ sudo ./full_install.sh
 docker run -d --name lnmp-panel -p 8080:8080 \
   -v /etc/nginx:/etc/nginx -v /etc/mysql:/etc/mysql \
   -v /etc/php:/etc/php -v /var/log:/var/log \
-  your-repo/lnmp-panel:armv7l
+  hookrock/lnmp-panel:armv7l
 ```
 
 ### 方式三：手动安装
 ```bash
 # 下载二进制文件
-wget https://github.com/your-repo/lnmp-panel/releases/latest/lnmp-panel-armv7l
+wget https://github.com/hookrock/lnmp-panel/releases/latest/lnmp-panel-armv7l
 sudo mv lnmp-panel-armv7l /usr/local/bin/lnmp-panel
 sudo chmod +x /usr/local/bin/lnmp-panel
 
@@ -129,7 +129,7 @@ sudo lnmp-panel
 
 ### 开发环境搭建
 ```bash
-git clone https://github.com/your-repo/lnmp-panel.git
+git clone https://github.com/hookrock/lnmp-panel.git
 cd lnmp-panel
 go mod tidy
 go run main.go
