@@ -129,7 +129,7 @@ install_panel() {
     log_info "下载LNMP运维面板..."
     
     local version="1.0.0"
-    local download_url="https://github.com/your-repo/lnmp-panel/releases/download/v${version}/lnmp-panel-armv7l"
+    local download_url="https://github.com/hookrock/lnmp-panel/releases/download/v${version}/lnmp-panel-armv7l"
     
     cd /opt/lnmp-panel
     
@@ -155,7 +155,7 @@ build_from_source() {
     
     # 下载源码
     cd /tmp
-    git clone https://github.com/your-repo/lnmp-panel.git
+    git clone https://github.com/hookrock/lnmp-panel.git
     cd lnmp-panel
     
     # 构建ARMv7l版本
@@ -250,7 +250,7 @@ create_systemd_service() {
     sudo cat > /etc/systemd/system/lnmp-panel.service << EOF
 [Unit]
 Description=LNMP运维面板
-Documentation=https://github.com/your-repo/lnmp-panel
+Documentation=https://github.com/hookrock/lnmp-panel
 After=network.target
 Wants=network.target
 
