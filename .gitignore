@@ -1,0 +1,55 @@
+# 二进制文件
+bin/
+lnmp-panel*
+*.exe
+
+# 依赖目录
+vendor/
+
+# 配置文件
+config.json
+*.env
+.env.local
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+tmp/
+*.tmp
+*.temp
+
+# 构建产物
+dist/
+build/
+*.tar.gz
+*.zip
+
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 测试文件
+coverage.txt
+*.test
+
+# Docker相关
+Dockerfile.bak
+.dockerignore
+
+# 备份文件
+*.bak
+*.backup
+
+# 文档生成
+docs/_build/
+
+# 特定于项目的忽略文件
+deploy/install_part*.sh
